@@ -13,8 +13,6 @@ const displayList = () => shoppingList.forEach((item) => console.log(item));
 
 //Task 2: Filter and Search an Array
 
-// Write a function called filterItems that takes a search term as a parameter and returns all items in the shoppingList that contain that search term (case-insensitive).
-
 const filterItems = (term) => {
 	let found = shoppingList.filter((item) =>
 		item.toLowerCase().includes(term.toLowerCase()),
