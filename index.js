@@ -1,3 +1,5 @@
+// Task 1: Array Manipulation Basics
+
 const shoppingList = [];
 
 const addItem = (item) => {
@@ -9,10 +11,13 @@ const removeLastItem = (item) => shoppingList.pop(item);
 
 const displayList = () => shoppingList.forEach((item) => console.log(item));
 
+//Task 2: Filter and Search an Array
+
 const filterItems = (term) => {
 	term = term.toLowerCase();
 };
 
+// Task 3: Render the List in the Browser
 let cart = [];
 let itemInput = document.getElementById("itemInput");
 let addItemButton = document.getElementById("addItemButton");
