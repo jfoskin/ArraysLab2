@@ -3,10 +3,11 @@
 ### Built With
 
 - JavaScript
+- HTML
 
 ### What I learned
 
-I learned how to define an optional paramter
+I implemented other array methods to complete a tas
 
 ### Useful Resources
 
@@ -14,11 +15,9 @@ I learned how to define an optional paramter
 
 ### Reflections
 
-How did you approach creating more flexible functions with parameters?
-I decided to create arrow functions and include my parameters.
+How did array methods like push() and filter() help you manipulate data in this activity?
 
-What challenges did you face while incorporating conditional logic in your functions?
-Deciding the best way to order my conditions.
+It cut out other logic I would need to implement.
 
-How does refactoring improve the readability and maintainability of your code?
-Refactoring allows maintaining of my code to help scope certain functionality.
+What challenges did you face when trying to filter and search for items in the array?
+How would you modify this code to make it more efficient or user-friendly?
