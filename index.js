@@ -1,7 +1,8 @@
 const shoppingList = [];
 
 const addItem = (item) => {
-	shoppingList.filter((item) => (!item ? shoppingList.push(item) : ""));
+	let itemInArr = shoppingList.includes(item);
+	!itemInArr ? shoppingList.push(item) : "";
 };
 
 const removeLastItem = (item) => shoppingList.pop(item);
