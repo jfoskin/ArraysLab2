@@ -9,7 +9,7 @@ const addItem = (item) => {
 
 const removeLastItem = (item) => shoppingList.pop(item);
 
-const displayList = () => shoppingList.forEach((item) => console.log(item));
+const theList = () => shoppingList.forEach((item) => console.log(item));
 
 //Task 2: Filter and Search an Array
 
@@ -21,11 +21,11 @@ const filterItems = (term) => {
 };
 
 // Task 3: Render the List in the Browser
-let cart = [];
+let list = [];
 let itemInput = document.getElementById("itemInput");
 let addItemButton = document.getElementById("addItemButton");
 let removeItemButton = document.getElementById("removeItemButton");
-let cartList = document.getElementById("cart");
+let displayList = document.getElementById("list");
 
 addItemButton.addEventListener("click", function () {
 	let item = itemInput.value;
@@ -35,26 +35,26 @@ addItemButton.addEventListener("click", function () {
 		return;
 	}
 
-	cart.push(item); // Add item to cart array
-	renderCart();
+	list.push(item); // Add item to cart array
+	renderList();
 	itemInput.value = ""; // Clear the input field
 });
 
 removeItemButton.addEventListener("click", function () {
-	if (cart.length === 0) {
+	if (list.length === 0) {
 		alert("Nothing to remove");
 	}
 
-	cart.pop(); // Remove last item from cart array
-	renderCart();
+	list.pop(); // Remove last item from cart array
+	renderList();
 });
 
-function renderCart() {
-	cartList.innerHTML = ""; // Clear existing list
-	for (let i = 0; i < cart.length; i++) {
+function renderList() {
+	displayList.innerHTML = ""; // Clear existing list
+	for (let i = 0; i < list.length; i++) {
 		let listItem = document.createElement("li");
-		listItem.innerText = cart[i];
-		cartList.appendChild(listItem);
+		listItem.innerText = list[i];
+		displayList.appendChild(listItem);
 	}
 }
 
